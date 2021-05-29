@@ -1,0 +1,6 @@
+framework module Pods_MangaTool {
+  umbrella header "Pods-MangaTool-umbrella.h"
+
+  export *
+  module * { export * }
+}

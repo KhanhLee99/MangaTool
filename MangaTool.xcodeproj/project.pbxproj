@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C24706F2663750300B5C8EB /* HomeSuggestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C24706D2663750300B5C8EB /* HomeSuggestCell.swift */; };
+		1C2470702663750300B5C8EB /* HomeSuggestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C24706E2663750300B5C8EB /* HomeSuggestCell.xib */; };
+		1C2470742663754D00B5C8EB /* HomeSuggestItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2470722663754D00B5C8EB /* HomeSuggestItemCell.swift */; };
+		1C2470752663754D00B5C8EB /* HomeSuggestItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C2470732663754D00B5C8EB /* HomeSuggestItemCell.xib */; };
+		1C24707926637D5D00B5C8EB /* HomeHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C24707726637D5D00B5C8EB /* HomeHeaderView.xib */; };
+		1C24707A26637D5D00B5C8EB /* HomeHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C24707826637D5D00B5C8EB /* HomeHeaderView.swift */; };
+		1C24707F2663F87900B5C8EB /* ComicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C24707D2663F87900B5C8EB /* ComicViewController.swift */; };
+		1C2470802663F87900B5C8EB /* ComicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C24707E2663F87900B5C8EB /* ComicViewController.xib */; };
+		1C2470842663F8AA00B5C8EB /* NovelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2470822663F8AA00B5C8EB /* NovelViewController.swift */; };
+		1C2470852663F8AA00B5C8EB /* NovelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C2470832663F8AA00B5C8EB /* NovelViewController.xib */; };
+		1C2470892663F8CD00B5C8EB /* ChatStoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C2470872663F8CD00B5C8EB /* ChatStoryViewController.swift */; };
+		1C24708A2663F8CD00B5C8EB /* ChatStoryViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C2470882663F8CD00B5C8EB /* ChatStoryViewController.xib */; };
 		1C5203FF266226EB008D094D /* NavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5203FE266226EB008D094D /* NavigationView.swift */; };
 		1C52040126622739008D094D /* NavigationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C52040026622739008D094D /* NavigationView.xib */; };
 		1C52040E26622E47008D094D /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C52040D26622E47008D094D /* BaseViewController.swift */; };
@@ -58,6 +70,18 @@
 
 /* Begin PBXFileReference section */
 		069936B66A1AACAF55BA2D7F /* Pods-MangaTool.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MangaTool.debug.xcconfig"; path = "Target Support Files/Pods-MangaTool/Pods-MangaTool.debug.xcconfig"; sourceTree = "<group>"; };
+		1C24706D2663750300B5C8EB /* HomeSuggestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSuggestCell.swift; sourceTree = "<group>"; };
+		1C24706E2663750300B5C8EB /* HomeSuggestCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeSuggestCell.xib; sourceTree = "<group>"; };
+		1C2470722663754D00B5C8EB /* HomeSuggestItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSuggestItemCell.swift; sourceTree = "<group>"; };
+		1C2470732663754D00B5C8EB /* HomeSuggestItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeSuggestItemCell.xib; sourceTree = "<group>"; };
+		1C24707726637D5D00B5C8EB /* HomeHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeHeaderView.xib; sourceTree = "<group>"; };
+		1C24707826637D5D00B5C8EB /* HomeHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeHeaderView.swift; sourceTree = "<group>"; };
+		1C24707D2663F87900B5C8EB /* ComicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicViewController.swift; sourceTree = "<group>"; };
+		1C24707E2663F87900B5C8EB /* ComicViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ComicViewController.xib; sourceTree = "<group>"; };
+		1C2470822663F8AA00B5C8EB /* NovelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NovelViewController.swift; sourceTree = "<group>"; };
+		1C2470832663F8AA00B5C8EB /* NovelViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NovelViewController.xib; sourceTree = "<group>"; };
+		1C2470872663F8CD00B5C8EB /* ChatStoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatStoryViewController.swift; sourceTree = "<group>"; };
+		1C2470882663F8CD00B5C8EB /* ChatStoryViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatStoryViewController.xib; sourceTree = "<group>"; };
 		1C5203FE266226EB008D094D /* NavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationView.swift; sourceTree = "<group>"; };
 		1C52040026622739008D094D /* NavigationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavigationView.xib; sourceTree = "<group>"; };
 		1C52040D26622E47008D094D /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -122,6 +146,81 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1C24706B2663222A00B5C8EB /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1C2470712663750E00B5C8EB /* HomeSuggestItemCell */,
+				1C24706C266374CE00B5C8EB /* HomeSuggestCell */,
+				1C52043B26629A3B008D094D /* HomeCellUpdateItem */,
+				1C834B5F265A767600611F00 /* HomeCellUpdate */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		1C24706C266374CE00B5C8EB /* HomeSuggestCell */ = {
+			isa = PBXGroup;
+			children = (
+				1C24706D2663750300B5C8EB /* HomeSuggestCell.swift */,
+				1C24706E2663750300B5C8EB /* HomeSuggestCell.xib */,
+			);
+			path = HomeSuggestCell;
+			sourceTree = "<group>";
+		};
+		1C2470712663750E00B5C8EB /* HomeSuggestItemCell */ = {
+			isa = PBXGroup;
+			children = (
+				1C2470722663754D00B5C8EB /* HomeSuggestItemCell.swift */,
+				1C2470732663754D00B5C8EB /* HomeSuggestItemCell.xib */,
+			);
+			path = HomeSuggestItemCell;
+			sourceTree = "<group>";
+		};
+		1C24707626637BE200B5C8EB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				1C24707726637D5D00B5C8EB /* HomeHeaderView.xib */,
+				1C24707826637D5D00B5C8EB /* HomeHeaderView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		1C24707B2663F80000B5C8EB /* ContentVC */ = {
+			isa = PBXGroup;
+			children = (
+				1C2470862663F8AE00B5C8EB /* ChatStory */,
+				1C2470812663F89A00B5C8EB /* Novel */,
+				1C24707C2663F82A00B5C8EB /* Comic */,
+			);
+			path = ContentVC;
+			sourceTree = "<group>";
+		};
+		1C24707C2663F82A00B5C8EB /* Comic */ = {
+			isa = PBXGroup;
+			children = (
+				1C24707D2663F87900B5C8EB /* ComicViewController.swift */,
+				1C24707E2663F87900B5C8EB /* ComicViewController.xib */,
+			);
+			path = Comic;
+			sourceTree = "<group>";
+		};
+		1C2470812663F89A00B5C8EB /* Novel */ = {
+			isa = PBXGroup;
+			children = (
+				1C2470822663F8AA00B5C8EB /* NovelViewController.swift */,
+				1C2470832663F8AA00B5C8EB /* NovelViewController.xib */,
+			);
+			path = Novel;
+			sourceTree = "<group>";
+		};
+		1C2470862663F8AE00B5C8EB /* ChatStory */ = {
+			isa = PBXGroup;
+			children = (
+				1C2470872663F8CD00B5C8EB /* ChatStoryViewController.swift */,
+				1C2470882663F8CD00B5C8EB /* ChatStoryViewController.xib */,
+			);
+			path = ChatStory;
+			sourceTree = "<group>";
+		};
 		1C5203FC2662264B008D094D /* UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,8 +242,8 @@
 		1C52040226622A4F008D094D /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				1C52043B26629A3B008D094D /* HomeCellUpdateItem */,
-				1C834B5F265A767600611F00 /* HomeCellUpdate */,
+				1C24707626637BE200B5C8EB /* View */,
+				1C24706B2663222A00B5C8EB /* Cell */,
 				1C834B43265A485100611F00 /* HomeViewController.swift */,
 				1C834B44265A485100611F00 /* HomeViewController.xib */,
 			);
@@ -376,6 +475,7 @@
 		1C834B3F265A47B100611F00 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				1C24707B2663F80000B5C8EB /* ContentVC */,
 				1C7C72F6265AD1A000D5AA88 /* CategoryCell */,
 				1C834B47265A486D00611F00 /* CategoryViewController.swift */,
 				1C834B48265A486D00611F00 /* CategoryViewController.xib */,
@@ -502,21 +602,27 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C24708A2663F8CD00B5C8EB /* ChatStoryViewController.xib in Resources */,
 				1C834B39265A19CC00611F00 /* IntroduceViewController.xib in Resources */,
 				1C52041626623110008D094D /* MyPointViewController.xib in Resources */,
 				1C52043F26629A79008D094D /* HomeCellUpdateItem.xib in Resources */,
+				1C2470852663F8AA00B5C8EB /* NovelViewController.xib in Resources */,
 				1C520433266246F2008D094D /* SlideView.xib in Resources */,
 				1C834B52265A488700611F00 /* BookcaseViewController.xib in Resources */,
 				1C52040126622739008D094D /* NavigationView.xib in Resources */,
+				1C24707926637D5D00B5C8EB /* HomeHeaderView.xib in Resources */,
 				1C834B2C265A196D00611F00 /* LaunchScreen.storyboard in Resources */,
 				1C520428266239CE008D094D /* HistoryViewController.xib in Resources */,
 				1C834B4A265A486D00611F00 /* CategoryViewController.xib in Resources */,
+				1C2470702663750300B5C8EB /* HomeSuggestCell.xib in Resources */,
 				1C834B63265A769900611F00 /* HomeCellUpdate.xib in Resources */,
 				1C834B46265A485100611F00 /* HomeViewController.xib in Resources */,
 				1C52041A2662311F008D094D /* DailyViewController.xib in Resources */,
 				1C834B29265A196D00611F00 /* Preview Assets.xcassets in Resources */,
 				1C52041226622ED4008D094D /* RankingViewController.xib in Resources */,
 				1C834B4E265A487B00611F00 /* DiscoverViewController.xib in Resources */,
+				1C2470752663754D00B5C8EB /* HomeSuggestItemCell.xib in Resources */,
+				1C2470802663F87900B5C8EB /* ComicViewController.xib in Resources */,
 				1C7C72FA265AD1C700D5AA88 /* CategoryCell.xib in Resources */,
 				1C834B56265A489600611F00 /* PersonalViewController.xib in Resources */,
 				1C52042E26624159008D094D /* ContentViewController.xib in Resources */,
@@ -576,6 +682,8 @@
 			files = (
 				1C834B38265A19CC00611F00 /* IntroduceViewController.swift in Sources */,
 				1C834B20265A196C00611F00 /* AppDelegate.swift in Sources */,
+				1C24707F2663F87900B5C8EB /* ComicViewController.swift in Sources */,
+				1C24707A26637D5D00B5C8EB /* HomeHeaderView.swift in Sources */,
 				1C52043E26629A79008D094D /* HomeCellUpdateItem.swift in Sources */,
 				1C52043826628E34008D094D /* HomeSection.swift in Sources */,
 				1C52042D26624159008D094D /* ContentViewController.swift in Sources */,
@@ -592,14 +700,18 @@
 				1C52041526623110008D094D /* MyPointViewController.swift in Sources */,
 				1C834B62265A769900611F00 /* HomeCellUpdate.swift in Sources */,
 				1C52041126622ED4008D094D /* RankingViewController.swift in Sources */,
+				1C2470742663754D00B5C8EB /* HomeSuggestItemCell.swift in Sources */,
 				1C834B22265A196C00611F00 /* SceneDelegate.swift in Sources */,
 				1C5204192662311F008D094D /* DailyViewController.swift in Sources */,
 				1C52042226623672008D094D /* SearchViewController.swift in Sources */,
+				1C2470892663F8CD00B5C8EB /* ChatStoryViewController.swift in Sources */,
 				1C834B55265A489600611F00 /* PersonalViewController.swift in Sources */,
 				1C834B58265A4A2E00611F00 /* BaseNavigationController.swift in Sources */,
 				1C834B4D265A487B00611F00 /* DiscoverViewController.swift in Sources */,
 				1C834B24265A196C00611F00 /* ContentView.swift in Sources */,
+				1C2470842663F8AA00B5C8EB /* NovelViewController.swift in Sources */,
 				1C834B45265A485100611F00 /* HomeViewController.swift in Sources */,
+				1C24706F2663750300B5C8EB /* HomeSuggestCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

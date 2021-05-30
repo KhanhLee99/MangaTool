@@ -9,4 +9,5 @@ target 'MangaTool' do
   pod 'FSPagerView'
   pod 'RxSwift'
   pod 'RxCocoa'
+  pod 'Parchment'
 end

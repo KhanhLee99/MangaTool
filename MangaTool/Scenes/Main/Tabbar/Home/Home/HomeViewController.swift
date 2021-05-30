@@ -76,10 +76,17 @@ extension HomeViewController {
             automaticallyAdjustsScrollViewInsets = false
         }
         tbMain.register(UINib(nibName: "HomeCellUpdate", bundle: nil), forCellReuseIdentifier: "HomeCellUpdate")
+        tbMain.register(UINib(nibName: "HomeSuggestCell", bundle: nil), forCellReuseIdentifier: "HomeSuggestCell")
+        tbMain.register(UINib(nibName: "HomeHeaderView", bundle: nil), forHeaderFooterViewReuseIdentifier: "HomeHeaderView")
         tbMain.delegate = self
         tbMain.dataSource = self
         tbMain.separatorStyle = .none
         tbMain.contentInset = UIEdgeInsets(top: 10, left: 0, bottom: 0, right: 0)
+        
+//        // footer section
+//        let footerView = UIView()
+//        footerView.backgroundColor = .red
+//        tbMain.tableFooterView = footerView
     }
 }
 
@@ -93,7 +100,12 @@ extension HomeViewController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "HomeCellUpdate", for: indexPath) as! HomeCellUpdate
+        if indexPath.section == 0 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "HomeCellUpdate", for: indexPath) as! HomeCellUpdate
+            cell.selectionStyle = .none
+            return cell
+        }
+        let cell = tableView.dequeueReusableCell(withIdentifier: "HomeSuggestCell", for: indexPath) as! HomeSuggestCell
         cell.selectionStyle = .none
         return cell
     }
@@ -108,8 +120,33 @@ extension HomeViewController: UITableViewDelegate {
         }
 
         if indexPath.section == 1 {
-            return 330.0
+            return 370.0
         }
-        return 330.0
+        return 370.0
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+
+        let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: "HomeHeaderView") as! HomeHeaderView
+//        if section == 0 {
+            header.lbRight.isHidden = true
+            header.lbLeft.text = listHomeSection[section].title
+            return header
+//        }
+//
+//        return nil
+    }
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        let footerView = UIView()
+        footerView.backgroundColor = .white
+        return footerView
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 50.0
+    }
+    
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 35.0
     }
 }

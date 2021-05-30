@@ -54,6 +54,6 @@ extension HomeCellUpdate: UICollectionViewDelegate {
 
 extension HomeCellUpdate: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 192, height: 165)
+        return CGSize(width: 190, height: 165)
     }
 }

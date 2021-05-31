@@ -65,6 +65,8 @@
 		1C834B5B265A57DB00611F00 /* ColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C834B5A265A57DB00611F00 /* ColorExtension.swift */; };
 		1C834B62265A769900611F00 /* HomeCellUpdate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C834B60265A769900611F00 /* HomeCellUpdate.swift */; };
 		1C834B63265A769900611F00 /* HomeCellUpdate.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C834B61265A769900611F00 /* HomeCellUpdate.xib */; };
+		1CE546CC26654342004641B7 /* ComicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CE546CA26654342004641B7 /* ComicCell.swift */; };
+		1CE546CD26654342004641B7 /* ComicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CE546CB26654342004641B7 /* ComicCell.xib */; };
 		EE35CC0C10BEC345BDD11325 /* Pods_MangaTool.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24F2F31BA79615B35E0686F6 /* Pods_MangaTool.framework */; };
 /* End PBXBuildFile section */
 
@@ -130,6 +132,8 @@
 		1C834B5A265A57DB00611F00 /* ColorExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorExtension.swift; sourceTree = "<group>"; };
 		1C834B60265A769900611F00 /* HomeCellUpdate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCellUpdate.swift; sourceTree = "<group>"; };
 		1C834B61265A769900611F00 /* HomeCellUpdate.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCellUpdate.xib; sourceTree = "<group>"; };
+		1CE546CA26654342004641B7 /* ComicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComicCell.swift; sourceTree = "<group>"; };
+		1CE546CB26654342004641B7 /* ComicCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ComicCell.xib; sourceTree = "<group>"; };
 		24F2F31BA79615B35E0686F6 /* Pods_MangaTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MangaTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB7D60B8D1EEB90CE330352D /* Pods-MangaTool.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MangaTool.release.xcconfig"; path = "Target Support Files/Pods-MangaTool/Pods-MangaTool.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -187,6 +191,7 @@
 		1C24707B2663F80000B5C8EB /* ContentVC */ = {
 			isa = PBXGroup;
 			children = (
+				1CE546C92665431F004641B7 /* Cell */,
 				1C2470862663F8AE00B5C8EB /* ChatStory */,
 				1C2470812663F89A00B5C8EB /* Novel */,
 				1C24707C2663F82A00B5C8EB /* Comic */,
@@ -526,6 +531,23 @@
 			path = HomeCellUpdate;
 			sourceTree = "<group>";
 		};
+		1CE546C92665431F004641B7 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1CE546CE26654AEC004641B7 /* ComicCell */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		1CE546CE26654AEC004641B7 /* ComicCell */ = {
+			isa = PBXGroup;
+			children = (
+				1CE546CA26654342004641B7 /* ComicCell.swift */,
+				1CE546CB26654342004641B7 /* ComicCell.xib */,
+			);
+			path = ComicCell;
+			sourceTree = "<group>";
+		};
 		E92A0D499F5646DF5B157DC1 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -606,6 +628,7 @@
 				1C834B39265A19CC00611F00 /* IntroduceViewController.xib in Resources */,
 				1C52041626623110008D094D /* MyPointViewController.xib in Resources */,
 				1C52043F26629A79008D094D /* HomeCellUpdateItem.xib in Resources */,
+				1CE546CD26654342004641B7 /* ComicCell.xib in Resources */,
 				1C2470852663F8AA00B5C8EB /* NovelViewController.xib in Resources */,
 				1C520433266246F2008D094D /* SlideView.xib in Resources */,
 				1C834B52265A488700611F00 /* BookcaseViewController.xib in Resources */,
@@ -683,6 +706,7 @@
 				1C834B38265A19CC00611F00 /* IntroduceViewController.swift in Sources */,
 				1C834B20265A196C00611F00 /* AppDelegate.swift in Sources */,
 				1C24707F2663F87900B5C8EB /* ComicViewController.swift in Sources */,
+				1CE546CC26654342004641B7 /* ComicCell.swift in Sources */,
 				1C24707A26637D5D00B5C8EB /* HomeHeaderView.swift in Sources */,
 				1C52043E26629A79008D094D /* HomeCellUpdateItem.swift in Sources */,
 				1C52043826628E34008D094D /* HomeSection.swift in Sources */,

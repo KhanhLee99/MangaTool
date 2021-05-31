@@ -8,88 +8,63 @@
 import UIKit
 import Parchment
 
-struct PagingCustomItem {
-    let index: Int
-    let title: String
-    let vc: UIViewController
-    var height: CGFloat
-    
-    init(index: Int, title: String, vc: UIViewController, height: CGFloat) {
-        self.index = index
-        self.title = title
-        self.vc = vc
-        self.height = height
-    }
-    
-    func item() -> PagingIndexItem {
-        return PagingIndexItem(index: index, title: title)
-    }
-}
-
-class CategoryViewController: UIViewController {
+class CategoryViewController: BaseViewController {
+    // MARK: - IBOulet
+    @IBOutlet weak var viewPageMenu: UIView!
     
     //MARK: - Properties
-//    var viewControllers: [PagingCustomItem] = []
-    let pagingViewController = PagingViewController()
-    
+    var pagingViewController = PagingViewController()
+    var viewControllers: [UIViewController] = [ComicViewController(), NovelViewController(), ChatStoryViewController()]
+    let pagingTitle = ["Page1","Page2","Page3","Page1","Page2","Page3","Page1","Page2","Page3"]
+
     // MARK: - Life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+    }
+    
+     func handleWithDataSource() {
+        
+        // must implement datasource and 3 method above
+        let pagingViewController = PagingViewController()
+        pagingViewController.dataSource = self
+        
+        pagingViewController.textColor = UIColor.red
+        pagingViewController.selectedTextColor = UIColor.blue
+        pagingViewController.borderColor = UIColor.purple
+        pagingViewController.indicatorColor = UIColor.yellow
+        
+        addChild(pagingViewController)
+        viewPageMenu.addSubview(pagingViewController.view)
+        pagingViewController.didMove(toParent: self)
+        pagingViewController.view.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            pagingViewController.view.leadingAnchor.constraint(equalTo: viewPageMenu.leadingAnchor),
+            pagingViewController.view.trailingAnchor.constraint(equalTo: viewPageMenu.trailingAnchor),
+            pagingViewController.view.bottomAnchor.constraint(equalTo: viewPageMenu.bottomAnchor),
+            pagingViewController.view.topAnchor.constraint(equalTo: viewPageMenu.topAnchor)
+        ])
     }
 
 }
 
 extension CategoryViewController {
     func setupUI() {
-//        let vc1 = ComicViewController()
-//        let item1 = PagingCustomItem(index: 0, title: "Truyen Tranh", vc: vc1, height: 500)
-//        let vc2 = ChatStoryViewController()
-//        let item2 = PagingCustomItem(index: 1, title: "Truyen Chat", vc: vc2, height: 500)
-//        let vc3 = NovelViewController()
-//        let item3 = PagingCustomItem(index: 2, title: "Tieu Thuyet", vc: vc3, height: 500)
-//        viewControllers = [item1, item2, item3]
-        let  viewControllers = [
-            ComicViewController(),
-            ChatStoryViewController(),
-            NovelViewController(),
-        ]
-        let pagingViewController = PagingViewController(viewControllers: viewControllers)
-        addChild(pagingViewController)
-        view.addSubview(pagingViewController.view)
-//        view.constrainToEdges(pagingViewController.view)
-        pagingViewController.didMove(toParent: self)
+        handleWithDataSource()
     }
 }
 
-//import Parchment
-//import UIKit
-//
-//// This is the simplest use case of using Parchment. We just create a
-//// bunch of view controllers, and pass them into our paging view
-//// controller. FixedPagingViewController is a subclass of
-//// PagingViewController that makes it much easier to get started with
-//// Parchment when you only have a fixed array of view controllers. It
-//// will create a data source for us and set up the paging items to
-//// display the view controllers title.
-//class BasicViewController: UIViewController {
-//    override func viewDidLoad() {
-//        super.viewDidLoad()
-//
-//        let viewControllers = [
-//            ContentViewController(index: 0),
-//            ContentViewController(index: 1),
-//            ContentViewController(index: 2),
-//            ContentViewController(index: 3),
-//        ]
-//
-//        let pagingViewController = PagingViewController(viewControllers: viewControllers)
-//
-//        // Make sure you add the PagingViewController as a child view
-//        // controller and constrain it to the edges of the view.
-//        addChild(pagingViewController)
-//        view.addSubview(pagingViewController.view)
-//        view.constrainToEdges(pagingViewController.view)
-//        pagingViewController.didMove(toParent: self)
-//    }
-//}
+extension CategoryViewController: PagingViewControllerDataSource {
+    func numberOfViewControllers(in pagingViewController: PagingViewController) -> Int {
+        return pagingTitle.count
+    }
+
+    func pagingViewController(_: PagingViewController, viewControllerAt index: Int) -> UIViewController {
+        return viewControllers[index]
+    }
+
+    func pagingViewController(_: PagingViewController, pagingItemAt index: Int) -> PagingItem {
+        return PagingIndexItem(index: index, title: pagingTitle[index])
+    }
+}
